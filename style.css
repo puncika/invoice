@@ -1,0 +1,562 @@
+/* ------------------------------------------------------ */
+
+#a4-preview {
+    width: 150mm; /* Šírka A4 */
+    height: 180mm; /* Výška A4 */
+    border: 1px solid #333;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+/*     margin-left: 400px;  */
+    position: relative; /* Potrebné pre zarovnanie tlačidla */
+    right: -100px;
+    margin: 50px;
+    color: #333;
+    font-size: 0.9em;
+
+    
+}
+
+#faktura-title {
+    position: relative; /* Potrebné pre zarovnanie tlačidla */
+    bottom: 40px;
+    left: 310px;
+    font-size: 30px;
+}
+
+/* UPRAVA NADPISU ODBERATEL V PREVIEW */
+
+.odberatel-section-title { 
+    position: relative; /* Potrebné pre zarovnanie tlačidla */
+    right: -200px;
+    bottom: 82px;
+}
+
+/* UPRAVA NADPISU ODBERATEL V PREVIEW */
+
+/* UPRAVA NADPISU DODAVATEL V PREVIEW */
+
+.dodavatel-section-title {
+    position: relative; /* Potrebné pre zarovnanie tlačidla */
+    bottom: 37px;
+}
+
+/* UPRAVA NADPISU DODAVATEL V PREVIEW */
+
+#section.title {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+
+/* UPRAVA UDAJOV V PREVIEW DODAVATEL */
+
+#preview-company-name {
+    position: absolute;
+    top: 30mm;
+    left: 8mm;
+    font-size: 12px;
+}
+
+#preview-ico {
+    position: absolute;
+    top: 35mm;
+    left: 8mm;
+    font-size: 12px;
+}
+
+#preview-bank-account {
+    position: absolute;
+    top: 40mm;
+    left: 8mm;
+    font-size: 12px;
+}
+
+#preview-contact-number {
+    position: absolute;
+    top: 45mm;
+    left: 8mm;
+    font-size: 12px;
+}
+
+/* UPRAVA UDAJOV V PREVIEW DODAVATEL */
+
+/* UPRAVA UDAJOV V PREVIEW ODBERATEL */
+
+#preview-company-name-other {
+    position: absolute;
+    top: 30mm;
+    left: 61mm;
+    font-size: 12px;
+}
+
+#preview-ico-other {
+    position: absolute;
+    top: 35mm;
+    left: 61mm;
+    font-size: 12px;
+}
+
+#preview-bank-account-other {
+    position: absolute;
+    top: 40mm;
+    left: 61mm;
+    font-size: 12px;
+}
+
+#preview-contact-number-other {
+    position: absolute;
+    top: 45mm;
+    left: 61mm;
+    font-size: 12px;
+}
+
+/* UPRAVA UDAJOV V PREVIEW DODAVATEL */
+
+
+#faktura-title-number {
+    position: absolute;
+    bottom: 176mm;
+    left: 341px;
+    font-size: 12px;
+
+}
+
+/* .pdf-content-odberatel {
+    position: relative; 
+    top: 20px;
+    left: 250px;
+
+}
+ */
+.form-section-info {
+    display: grid;
+/*     grid-template-columns: repeat(1, 1fr);
+    column-gap: 10mm;
+    row-gap: 5mm; */
+    max-width: 300px;
+    bottom: 150px;
+    left: 150px;
+/*     grid-template-columns: 1fr 1fr; /* Dve rovnaké stĺpce */ 
+    gap: 10px; /* Medzera medzi prvkami */
+    height: 30px; /* Celková výška kontajnera */
+    position: relative; /* Potrebné pre zarovnanie tlačidla */
+/*     bottom: -110px; */
+    top: 400px;
+    left: -800px;
+
+
+
+}
+
+button {
+    display: block;
+    margin: 0 auto; /* zarovná tlačidlo do stredu, ak ho chceš v strede */
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: relative; /* Potrebné pre zarovnanie tlačidla */
+    top: 830px;
+    right: 270px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.form-section {
+    max-width: 300px;
+
+
+}
+
+.form-section-other {
+    max-width: 300px;
+
+}
+
+.form-section h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #000;
+    margin-left: 500px;
+}
+
+/* .pdf-content {
+    color: #333;
+    font-size: 0.9em;
+} */
+
+
+button:hover {
+    background-color: #45a049;
+
+}
+
+button {
+    max-height: 40px;
+    position: relative;
+    right: 330px;
+}
+
+
+/* Štýl pre tlačidlá */
+.button-container {
+    position: absolute; /* Nastav absolútnu pozíciu vzhľadom na rodičovský kontajner */
+    top: 330px; /* Vertikálna pozícia od vrchu */
+    right: 1130px; /* Horizontálna pozícia od ľavého okraja */
+}
+
+/* Bankový prevod tlačidlo */
+#bankovy-prevod {
+    position: relative; /* Nastavenie absolútnej pozície */
+    top: 250px; /* Vertikálne posunutie */
+    left: 510px; /* Horizontálne posunutie */
+    padding: 15px 20px;
+    border: 1px medium rgb(0, 0, 0);
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    max-height: 150px;
+    white-space: nowrap; /* Zabráni zalamovaniu textu */
+    text-align: center;  /* Zarovná text do stredu tlačidla */
+}
+
+/* Hotovosť tlačidlo */
+#hotovost {
+    position: relative; /* Nastavenie absolútnej pozície */
+    top: 250px; /* Vertikálne posunutie */
+    left: 510px; /* Horizontálne posunutie */
+    padding: 15px 45px;
+    border: 1px medium rgb(0, 0, 0);
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    max-height: 150px;
+    white-space: nowrap; /* Zabráni zalamovaniu textu */
+    text-align: center;  /* Zarovná text do stredu tlačidla */
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.toggle-button.active {
+    background-color: #05a0dd;
+    color: white;
+}
+
+.toggle-button:not(.active) {
+    background-color: white;
+    color: black;
+    border: 1px solid gray;
+}
+
+
+
+
+/* Každé políčko v riadku */
+.mesto-psc {
+    position: relative;
+}
+
+
+/* Špecifická úprava pre input Mesto */
+#mesto {
+    position: relative;
+    left: 115px;
+    bottom: 75px;
+    width: 43%; /* Nastaví šírku na 70% */
+    padding: 8px; /* Vnútorné okraje */
+    border: 2px solid #007bff; /* Modrý okraj */
+    border-radius: 10px; /* Zaoblené rohy */
+    background-color: #f9f9f9; /* Svetlosivý podklad */
+    font-size: 16px; /* Väčší text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Jemný tieň */
+}
+
+#bank-account {
+    position: relative;
+    width: 48%; /* Nastaví šírku na 70% */
+    padding: 8px; /* Vnútorné okraje */
+    border: 2px solid #007bff; /* Modrý okraj */
+    border-radius: 10px; /* Zaoblené rohy */
+    background-color: #f9f9f9; /* Svetlosivý podklad */
+    font-size: 16px; /* Väčší text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Jemný tieň */
+}
+
+label[for="bank-account"] {
+    display: block; /* Label bude nad inputom */
+    margin-bottom: 5px; /* Priestor medzi labelom a inputom */
+    font-weight: bold; /* Tučný text */
+    font-size: 14px; /* Nastaví veľkosť písma */
+}
+
+label[for="mesto"] {
+    display: block; /* Label bude nad inputom */
+    margin-bottom: 5px; /* Priestor medzi labelom a inputom */
+    font-weight: bold; /* Tučný text */
+    font-size: 14px; /* Nastaví veľkosť písma */
+    position: relative;
+    left: 120px;
+    bottom: 72px;
+}
+
+/* TU SA NACHADZA STYLING PRE POPIS FAKTURACIE SUMA  
+----------------------------------------------------------------------------------------------- */
+
+.invoice-item-section {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.invoice-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.invoice-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.item-name,
+.item-total {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.item-total {
+    max-width: 150px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="number"] {
+    text-align: right;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+#total-sum {
+    font-size: 18px;
+    color: #0056b3;
+}
+
+
+/* <!--    SEKCIA KDE SA NASTAVUJE **DATUM DODANIA** - **DATUM VYSTAVENIA** - **DATUM SPLATNOSTI** --> */
+
+.date-picker {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.minimal-dropdown {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #333;
+    appearance: none; /* Minimalizuje štýl prehliadača */
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.minimal-dropdown:hover {
+    border-color: #007bff;
+}
+
+.minimal-dropdown:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+span {
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* - **DATUM Splatnosti Styling a POZICIA** - */
+
+#date-section-splatnosti {
+    position: absolute; /* Nastav absolútnu pozíciu vzhľadom na rodičovský kontajner */
+    top: 560px; /* Vertikálna pozícia od vrchu */
+    left: 195px; /* Horizontálna pozícia od ľavého okraja */
+    width: 335px; /* Automatická šírka podľa obsahu */
+    padding: 9px; /* Vnútorné okraje */
+    background-color: #f9f9f9; /* Svetlosivé pozadie na oddelenie */
+    border-radius: 5px; /* Zaoblené rohy */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Jemný tieň */
+}
+
+
+/* - **DATUM **DODANIA** Styling a POZICIA** - */
+
+#date-section-dodania {
+    position: absolute; /* Nastav absolútnu pozíciu vzhľadom na rodičovský kontajner */
+    top: 500px; /* Vertikálna pozícia od vrchu */
+    left: 195px; /* Horizontálna pozícia od ľavého okraja */
+    width: 335px; /* Automatická šírka podľa obsahu */
+    padding: 10px; /* Vnútorné okraje */
+    background-color: #f9f9f9; /* Svetlosivé pozadie na oddelenie */
+    border-radius: 5px; /* Zaoblené rohy */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Jemný tieň */
+}
+
+
+
+
+
+/* - **DATUM **VYSTAVENIA* Styling a POZICIA** - */
+
+#date-section-vystavenia {
+    position: absolute; /* Nastav absolútnu pozíciu vzhľadom na rodičovský kontajner */
+    top: 500px; /* Vertikálna pozícia od vrchu */
+    left: 575px; /* Horizontálna pozícia od ľavého okraja */
+    width: auto; /* Automatická šírka podľa obsahu */
+    padding: 5px; /* Vnútorné okraje */
+    background-color: #f9f9f9; /* Svetlosivé pozadie na oddelenie */
+    border-radius: 5px; /* Zaoblené rohy */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Jemný tieň */
+}
+
+.celok-datumov {
+    position: absolute;
+    top: 20px;
+    right: 1510px;
+
+
+}
+
+/* NASTAVENIE PRE BANKA DETAILS A SEKCIE POD NOU 
+.bank-details-update {
+    position: relative;
+    top: 100px;
+    right: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dve stĺpce */
+    /*gap: 20px; /* Medzera medzi prvkami 
+
+}
+    */
+
+
+
+/* OPRAVIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIT TOTO JE TO SUCASTOU TOTO FROM GROUP A PODOBNE TOHO BANKD ETAILS// */
+
+.bank-details-update {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* Dve stĺpce */
+    gap: 20px; /* Medzera medzi prvkami */
+    position: relative;
+    right: 750px;
+    top: 100px;
+}
+
+.form-group-other {
+    display: flex;
+    flex-direction: column; /* Label nad inputom */
+}
+
+label {
+    margin-bottom: 5px; /* Priestor medzi label a input */
+    font-weight: bold; /* Zvýraznený label */
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+.contact-number-tel {
+    position: relative;
+    bottom: 80px;
+
+}
+
+/*background-color: #05a0dd;  Tyrkysová farba pozadia */
